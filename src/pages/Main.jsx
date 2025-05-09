@@ -9,7 +9,7 @@ import Navbar from '../components/Navbar';
 
 
 const Main = () => {
-  const baseUrl = "https://outfitron-be.vercel.app/";
+  const baseUrl = "https://curly-spork-pjrrp4jwj9r936vg-3000.app.github.dev";
   const navigate = useNavigate();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
@@ -87,7 +87,7 @@ const Main = () => {
 
     try {
 
-      const uploadResponse = await fetch(`${baseUrl}upload`, {
+      const uploadResponse = await fetch(`${baseUrl}/upload`, {
         method: 'POST',
         // headers : {
         //   'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ const Main = () => {
 
       if (uploadResponse.ok) {
         setResultText('🔄 Please wait, analyzing images...');
-        const outputResponse = await fetch(`${baseUrl}output`);
+        const outputResponse = await fetch(`${baseUrl}/output`);
         const output = await outputResponse.text();
         setResultText(output);
       } else {
