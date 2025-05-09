@@ -2,7 +2,7 @@
 const Navbar = () => {
 
   const callChathelper = () => {
-  window.location.href = chatHelper;
+  window.location.href = "https://chatapp-ed5s8m9esd2dcqrqthkisc.streamlit.app/";
 }
 
     return (

@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const api = axios.create({
     // baseURL : "http://localhost:3000/"
-    baseURL : "https://curly-spork-pjrrp4jwj9r936vg-3000.app.github.dev/"
+    baseURL : "https://outfitron-be.vercel.app/"
 })
 
 export const login = (props) => {

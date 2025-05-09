@@ -9,8 +9,7 @@ import Navbar from '../components/Navbar';
 
 
 const Main = () => {
-  const baseUrl = "https://curly-spork-pjrrp4jwj9r936vg-3000.app.github.dev/";
-  const chatHelper = "https://urban-goldfish-wqrvr545g7xfgp5p-8501.app.github.dev/"
+  const baseUrl = "https://outfitron-be.vercel.app/";
   const navigate = useNavigate();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
