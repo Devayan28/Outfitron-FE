@@ -35,15 +35,15 @@ const Main = () => {
     }
   };
 
-  useEffect(() => {
+//   useEffect(() => {
 
-    const token = localStorage.getItem('userToken');
-    if(!token || token.length<5){
-        navigate("/login");
-        return null;
-    }
+//     const token = localStorage.getItem('userToken');
+//     if(!token || token.length<5){
+//         navigate("/login");
+//         return null;
+//     }
 
-},[]);
+// });
 
   const capturePhoto = () => {
     const ctx = canvasRef.current.getContext('2d');
